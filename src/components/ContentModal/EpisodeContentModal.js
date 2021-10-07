@@ -7,7 +7,6 @@ import axios from "axios";
 import "./ContentModal.css";
 import {Link} from "react-router-dom";
 import {Button} from "@material-ui/core";
-import Carousel from "../Carousel/Carousel";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -98,7 +97,6 @@ export default function TransitionsModal({ children, media_type, id }) {
                                 details
                             </Link>
                         </Button>
-                    <Carousel id={id} />
 
                 </div>
               </div>

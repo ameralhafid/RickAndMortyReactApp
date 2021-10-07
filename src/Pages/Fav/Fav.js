@@ -3,7 +3,6 @@ import React, {useEffect, useState} from "react";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import axios from "axios";
 
-
 const Fav = () => {
 
     let fav = JSON.parse(localStorage.getItem('fav'));
@@ -24,8 +23,7 @@ const Fav = () => {
 
     <div>
         <span className="pageTitle">Favourites Characters ...</span>
-
-        <div className="characters">
+        <div className="favourites">
             {content &&
             content.map((c) => (
                 <SingleContent
@@ -43,5 +41,6 @@ const Fav = () => {
     </div>
     );
 };
+
 export default Fav;
 
