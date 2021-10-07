@@ -11,7 +11,7 @@ query episode($id: ID!){
      id
       name}
     created
-
+    
   }
     }
     `;

@@ -22,25 +22,25 @@ const Fav = () => {
 
     return (
 
-        <div>
-            <span className="pageTitle">Favourites Characters ...</span>
+    <div>
+        <span className="pageTitle">Favourites Characters ...</span>
 
-            <div className="characters">
-                {content &&
-                content.map((c) => (
-                    <SingleContent
-                        key={c.id}
-                        id={c.id}
-                        image={c.image}
-                        title={c.type || c.name}
-                        date={c.created }
-                        status={c.status}
-                        gender={c.gender}
-                        species={c.species}
-                    />
-                ))}
-            </div>
+        <div className="characters">
+            {content &&
+            content.map((c) => (
+                <SingleContent
+                    key={c.id}
+                    id={c.id}
+                    image={c.image}
+                    title={c.type || c.name}
+                    date={c.created }
+                    status={c.status}
+                    gender={c.gender}
+                    species={c.species}
+                />
+            ))}
         </div>
+    </div>
     );
 };
 export default Fav;

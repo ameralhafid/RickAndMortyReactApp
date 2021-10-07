@@ -11,44 +11,44 @@ export function CharacterByID({ character }) {
 
     return (
 
-        <div className="characters">
-            <div className="image">
-                <img alt={character.name} src={character.image}  />
-            </div>
-            <div  className="title">
-                <h3>Name: {character.name}</h3>
-                <h3 className="title">  Gender: {character.gender}</h3>
-                <h3 className="title">  Type: {character.type}</h3>
-                <h3>  Species: {character.species}</h3>
-                <h3>Status: {character.status}</h3>
-                <h4 className="title"> All Episodes with "{character.name}":</h4>
-            </div>
+            <div className="characters">
+                <div className="image">
+                    <img alt={character.name} src={character.image}  />
+                </div>
+                <div  className="title">
+                    <h3>Name: {character.name}</h3>
+                    <h3 className="title">  Gender: {character.gender}</h3>
+                    <h3 className="title">  Type: {character.type}</h3>
+                    <h3>  Species: {character.species}</h3>
+                    <h3>Status: {character.status}</h3>
+                    <h4 className="title"> All Episodes with "{character.name}":</h4>
+                </div>
 
 
 
 
 
-            {character.episode.map((exact = false, e) =>
+                     {character.episode.map((e) =>
 
-                <div className="media">
+                     <div className="media">
 
                     <div className="subTitle">
 
                         <Button  disableElevation>
                             <Link exact to={`/episode/${e.id}`}>
-                                {e.name}
+                            {e.name}
                             </Link>
                         </Button>
-                    </div>
-                </div>
-            )}
+                        </div>
+                        </div>
+                )}
 
 
 
 
 
 
-        </div>
+            </div>
 
 
     )

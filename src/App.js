@@ -11,28 +11,27 @@ import { EpisodeDetailContainer } from "./components/Container/EpisodeDetailCont
 import Fav from "./Pages/Fav/Fav";
 
 function App() {
-
   return (
-      <BrowserRouter>
-        <Header />
-        <div className="app">
-          <Container>
-            <Switch>
+    <BrowserRouter>
+      <Header />
+      <div className="app">
+        <Container>
+          <Switch>
               <Route path="/characters" component={Characters} />
-              <Route path="/fav" component={Fav} />
-              <Route path="/episodes" component={Episodes} />
+            <Route path="/fav" component={Fav} />
+            <Route path="/episodes" component={Episodes} />
               <Route path="/search" component={Search} />
-              <Route path={`/character/:id`}
-                     component={CharacterDetailContainer}/>
-              <Route path={`/episode/:id`}
-                     component={EpisodeDetailContainer}/>
+            <Route exact path={`/character/:id`}
+                 component={CharacterDetailContainer}/>
+                 <Route exact path={`/episode/:id`}
+                 component={EpisodeDetailContainer}/>
 
 
-            </Switch>
-          </Container>
-        </div>
-        <SimpleBottomNavigation />
-      </BrowserRouter>
+          </Switch>
+        </Container>
+      </div>
+      <SimpleBottomNavigation />
+    </BrowserRouter>
   );
 }
 

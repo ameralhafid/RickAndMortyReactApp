@@ -8,11 +8,11 @@ export function CharacterDetailContainer() {
     let { id } = useParams();
 
     const { data } = useQuery(CHARACTERBYID, {variables: {id}});
-    return (
+  return (
         <div className="character">
             {data && data.character &&
-            <CharacterByID key={data.character.id} character={data.character} />
+                 <CharacterByID key={data.character.id} character={data.character} />
             }
         </div>
-    );
+  );
 }

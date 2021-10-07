@@ -11,11 +11,11 @@ export const CHARACTERBYID = gql`
   gender
   origin{
     name
-
+    
   }
   location{
     name
-
+    
   }
   image
    episode{
