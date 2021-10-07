@@ -74,7 +74,8 @@ const Search = () => {
           onChange={(event, newValue) => {
             setType(newValue);
             setPage(1);
-          }}
+          }
+          }
           style={{ paddingBottom: 5 }}
           aria-label="disabled tabs example"
         >
